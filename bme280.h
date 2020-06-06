@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "stm32f1xx_hal.h"
+
+//gpio pin var is cs pin. sensors walks only in spi mode. Gonna update it for i2c soon(or maybe not so soon, cause I am actually pretty busy)
 typedef struct BME280{
 	int32_t calib_data[18];
 	int t_fine;
